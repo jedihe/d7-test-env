@@ -5,7 +5,7 @@ DRUPAL_BRANCH=7.x
 
 lando start
 
-lando drush si --dburl="mysql://drupal7:drupal7@database/drupal7" --account-pass=admin -y
+lando drush si --db-url="mysql://drupal7:drupal7@database/drupal7" --account-pass=admin -y
 
 echo "Running RdfCrudTestCase test with run-tests.sh..."
 echo "================================================"
