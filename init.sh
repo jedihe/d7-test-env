@@ -4,7 +4,7 @@ DRUPAL_BRANCH=7.x
 [ ! -d web ] &&
   git clone --depth 1 --branch $DRUPAL_BRANCH https://git.drupalcode.org/project/drupal.git web &&
   cd web &&
-  git apply <(curl -SsL https://www.drupal.org/files/issues/2021-04-18/3209417-drupal-run-tests-single-method-backport-2.patch) &&
+  git apply <(curl -SsL https://git.drupalcode.org/project/drupal/-/commit/9f42db5c081f64ef22b845eb84892ba3d05856bb.diff) &&
   cd ..
 
 lando start
